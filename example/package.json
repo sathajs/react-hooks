@@ -1,0 +1,22 @@
+{
+  "name": "satha-react-hooks-example",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@satha/core": "^1.1.1",
+    "@satha/react-hooks": "file:..",
+    "react": "file:../node_modules/react",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
