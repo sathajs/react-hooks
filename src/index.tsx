@@ -4,9 +4,11 @@ type StateProp = string | number | null | undefined | object | [];
 
 interface ISathaObject {
   get: () => StateProp;
-  subscribe: (arg0: (state: any) => void) => string;
-  unsubscribe: (arg0: any) => void;
-  set: (state: StateProp) => StateProp;
+  set: (arg0: (state: StateProp) => void) => void;
+  subscribe: (arg0: (state: StateProp) => void) => string;
+  reset: () => void;
+  unsubscribe: (id: string) => void;
+  unsubscribeAll: () => void;
 }
 
 export const useSatha = (sathaObject: ISathaObject) => {
