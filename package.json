@@ -1,12 +1,12 @@
 {
   "name": "@satha/react-hooks",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "React hooks for satha",
   "author": "siddacool",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siddacool/satha-react-hooks.git"
+    "url": "git+https://github.com/sathajs/react-hooks.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",

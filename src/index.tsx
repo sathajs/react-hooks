@@ -1,20 +1,20 @@
 import { useState, useEffect } from 'react';
 
+type StateProp = string | number | null | undefined | object | [];
+
 interface ISathaObject {
-  get: () => any;
-  subscribe: (arg0: (state: any) => void) => any;
+  get: () => StateProp;
+  subscribe: (arg0: (state: any) => void) => string;
   unsubscribe: (arg0: any) => void;
+  set: (state: StateProp) => StateProp;
 }
 
 export const useSatha = (sathaObject: ISathaObject) => {
   const [value, setValue] = useState(sathaObject.get());
 
   useEffect(() => {
-    const subscribe = sathaObject.subscribe((state: any) => {
+    const subscribe = sathaObject.subscribe((state: StateProp) => {
       setValue(state);
-
-      console.log(state);
-
     })
 
     return () => {
@@ -22,5 +22,5 @@ export const useSatha = (sathaObject: ISathaObject) => {
     };
   }, [value, setValue]);
 
-  return value;
+  return [value, sathaObject.set];
 };
