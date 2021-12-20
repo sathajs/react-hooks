@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@satha/core': ^1.1.1
+  '@satha/core': ^1.1.3
   '@satha/react-hooks': file:..
   react: file:../node_modules/react
   react-dom: ^16.9.0
   react-scripts: ^3.0.1
 
 dependencies:
-  '@satha/core': 1.1.1
+  '@satha/core': 1.1.3
   '@satha/react-hooks': link:..
   react: link:../node_modules/react
   react-dom: 16.14.0
@@ -1708,8 +1708,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /@satha/core/1.1.1:
-    resolution: {integrity: sha512-K9VsV5cqNVOU67N7X23O7P8I8b1jI3HF/rU+kWI60xKqfVNB/65dpdYKRX3jhehK3gia9DfmJNxeG3gzfvPjBw==}
+  /@satha/core/1.1.3:
+    resolution: {integrity: sha512-TiDb7by+H5a4n03ww0sunto5JYDqyA66RSFWTk7AO4Bx3gIcx4FxcIY69KjU4MKc0pH+tzJoztjxxFpe+xkzKw==}
     dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute/4.2.0:
